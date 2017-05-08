@@ -1,8 +1,5 @@
 <?php
-$cnt = 0;
 function qsort($bottom, $top, &$data){
-    global $cnt;
-    ++$cnt;
     if($bottom >= $top){
         return;
     }
@@ -50,4 +47,4 @@ if ($file) {
 fclose($file);
 
 qsort(0, $N-1, $sort);
-echo $cnt; //133403
+//var_dump($sort);
